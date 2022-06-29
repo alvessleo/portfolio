@@ -18,10 +18,13 @@ body nav{
 a{
     color: #fff;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 a:hover{
     opacity: 0.7;
+    color: #4fa1ff;
+
 }
 
 
@@ -142,36 +145,47 @@ nav{
 }
 
 .apresentation button{
+    background-color: #2f4a68;
     position: absolute;
     border: none;
     width: 212px;
     height: 44px;
-    left: 205px;
+    left: 251px;
     top: 550px;
     color: #FFFFFF;
-    background-color: #103eca;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 0%;
-    letter-spacing: 0.06em;
-    
+    letter-spacing: 0.07em;
+    transition: 0.5s;
+}
+
+.apresentation button:hover{
+    cursor: pointer;
+    background-color: #26479a;
+    opacity: 100%;
+}
+
+.teste{
+    background-color: #000000;
 }
 
 .line{
     position: absolute;
     width: 55px;
-    height: 1px;
-    left: 199px;
+    height: 2px;
+    left: 251px;
     top: 364px;
-    background: #D9D9D9;
+    border-radius: 5px;
+    background: #166dd1;
 }
 
 .label-welcome{
     position: absolute;
-    left: 268px;
+    left: 325px;
     top: 364px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -185,7 +199,7 @@ nav{
 
 .label-name{
     position: absolute;
-    left: 199px;
+    left: 251px;
     top: 416px;
     font-family: 'Playfair Display';
     font-style: normal;
@@ -198,19 +212,19 @@ nav{
 
 .label-subtitle{
     position: absolute;
-    left: 203px;
+    left: 251px;
     top: 500px;
     font-family: 'Inria Serif';
-    font-style: normal;
-    font-weight: 400;
+    font-style: small;
+    font-weight: 300;
     font-size: 32px;
     line-height: 0%;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: #b3c1c5;
 }
 
 .alves-logo{
-    opacity: 10%;
+    opacity: 8%;
     width: 1200px;
     pointer-events: none;
     user-select: none;
