@@ -105,6 +105,72 @@ nav{
     .mobile-menu{
         display: block;
     }
+
+    .apresentation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 7em;
+        transform: translateY(-7%);
+    }
+
+    .envelope-container{
+        transform: translateY(-56%);
+    }
+
+    .scroll-down{
+        margin-top: 5em;
+        margin-right: 7em;
+    }
+
+    .apresentation img{
+        width: 1100px;
+        transform: translateX(-17%);
+    }
+
+    .apresentation button{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+
+    .line{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+
+    .label-welcome{
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        left: 0;
+        margin-left: 4em;
+        
+    }
+
+    .envelope-container .label-name{
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        left: 0;
+        line-height: normal;
+    }
+
+    .envelope-container .label-subtitle{
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        left: 0;
+        line-height: normal;
+    }
 }
 
 .nav-list.active {
@@ -253,5 +319,71 @@ nav{
 .scroll-down{
     display: flex;
     justify-content: center;
+
+}
+
+@media (max-width: 1250px) {
+    .apresentation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 7em;
+        transform: translateY(-7%);
+    }
+
+    .envelope-container{
+        transform: translateY(-56%);
+    }
+
+    .scroll-down{
+        margin-right: 7em;
+    }
+
+    .apresentation img{
+        transform: translateX(-17%);
+    }
+
+    .apresentation button{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+
+    .line{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+
+    .label-welcome{
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        left: 0;
+        margin-left: 4em;
+        
+    }
+
+    .label-name{
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        left: 0;
+    }
+
+    .label-subtitle{
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        left: 0;
+    }
+
 
 }
