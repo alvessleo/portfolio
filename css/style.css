@@ -145,28 +145,29 @@ nav{
 }
 
 .apresentation button{
-    background-color: #2f4a68;
+    background-color: #16212e;
     position: absolute;
     border: none;
     width: 212px;
     height: 44px;
     left: 251px;
     top: 550px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 0%;
-    letter-spacing: 0.07em;
     transition: 0.5s;
+    
 }
 
 .apresentation button:hover{
     cursor: pointer;
-    background-color: #26479a;
-    opacity: 100%;
+    background-color: #121b41;
+    color: #fff;
+    letter-spacing: 0.07em;
 }
 
 .teste{
@@ -220,7 +221,7 @@ nav{
     font-size: 32px;
     line-height: 0%;
     letter-spacing: 0.02em;
-    color: #b3c1c5;
+    color: #c1c1c1;
 }
 
 .alves-logo{
@@ -228,4 +229,29 @@ nav{
     width: 1200px;
     pointer-events: none;
     user-select: none;
+}
+
+.line-scroll-down{
+    position: absolute;
+    width: 1px;
+    height: 85px;
+    background: #D9D9D9;
+
+}
+
+.label-scroll-down{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    margin-left: 2em;
+}
+
+.scroll-down{
+    display: flex;
+    justify-content: center;
+
 }
