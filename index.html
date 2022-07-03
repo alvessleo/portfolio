@@ -25,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <section class="apresentation">
+        <section class="apresentation" data-animation="top">
             <div class="envelope-container">
                 <div class="line"></div>
                 <label class="label-welcome">Olá, me chamo</label>
@@ -33,14 +33,14 @@
                 <label class="label-subtitle">Engenheiro de Software, Front End developer and UI designer.</label>
                 <button>Entre em contato</button>
             </div>
-            <img class="alves-logo" src="img/portifolio-alves.png">
+            <img class="alves-logo scroll" data-rate="0.2" data-direction="vertical" src="img/portifolio-alves.png">
             <div class="scroll-down">
                 <div class="line-scroll-down"></div>
                 <label id="scroll" class="label-scroll-down">Scroll down</label>
             </div>
         </section>
         
-        <section class="selected-projects">
+        <section class="selected-projects" data-animation="top">
             <div class="container-projects">
                 <div class="alinhar">
                     <div class="line-section2"></div>
@@ -52,9 +52,9 @@
                 </div>
                 
             </div>
-            <img class="projects-logo" src="img/projects-logo.png">
+            <img class="projects-logo scroll" data-direction="vertical" src="img/projects-logo.png">
         </section>
-        <secition class="work-together">
+        <secition class="work-together" data-animation="top">
             <div class="container-contact">
                 <div class="alinhar-contact">
                     <div class="line-section3"></div>
@@ -69,7 +69,7 @@
                     <button type="submit" id="sendEmail" name="sendEmail">Enviar</button>
                 </div>
             </div>
-            <img class="contact-logo" src="img/contact.png" alt="contatoImg">
+            <img class="contact-logo scroll" data-direction="vertical" src="img/contact.png" alt="contatoImg">
         </secition>
         <footer class="footer">
             <div class="logo">
@@ -80,5 +80,6 @@
     </main>
     <script src="js/mobile-navbar.js"></script>
     <script src="js/cards.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>

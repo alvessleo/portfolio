@@ -143,7 +143,7 @@ nav{
 
     .apresentation img{
         width: 1100px;
-        transform: translateX(-17%);
+        /*transform: translateX(-17%);*/
     }
 
     .apresentation button{
@@ -240,9 +240,8 @@ nav{
 /* SECTION 1 */
 
 .apresentation img{
-    display: flex;
-    flex-direction: column;
-    transform: translateX(-8%);
+    
+    /*transform: translateX(-8%);*/
     margin-top: 18vh;
     z-index: -9999;
     
@@ -402,9 +401,9 @@ nav{
         margin-right: 7em;
     }
 
-    .apresentation img{
+    /*.apresentation img{
         transform: translateX(-17%);
-    }
+    }*/
 
     .apresentation button{
         position: relative;
@@ -511,19 +510,20 @@ main .selected-projects{
 }
 
 .selected-projects img{
-    margin-top: -25vh;
     margin-left: -300px;
     z-index: -9999;
    
 }
 
+
+
 .projects-logo{
-    display: block;
+    
     opacity: 6%;
     width: 1200px;
     pointer-events: none;
     user-select: none;
-    transform: translateY(-127%);
+    margin-top: -26vh;
 }
 
 .label-selected-projects{
@@ -845,4 +845,22 @@ main .selected-projects{
     width: 100px;
     margin: 5px;
     opacity: 70%;
+}
+
+/* animacoes */
+
+
+
+[data-animation]{
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-animation="top"]{
+    transform: translate3d(0, -60px , 0);
+}
+
+[data-animation].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
