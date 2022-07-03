@@ -21,7 +21,9 @@ a{
     color: #fff;
     text-decoration: none;
     transition: 0.5s;
+
 }
+
 
 a:hover{
     opacity: 0.7;
@@ -189,6 +191,11 @@ nav{
         line-height: normal;
         margin-top: -80px;
     }
+
+    .work-together .container-contact{
+        margin-left: 149px;
+        
+    }
 }
 
 @media (max-width: 957px){
@@ -344,7 +351,7 @@ nav{
     font-size: 13px;
     color: #FFFFFF;
     text-transform: uppercase;
-    transform: rotate(90deg);
+    writing-mode: vertical-lr;
     margin-left: 2em;
 }
 
@@ -353,6 +360,30 @@ nav{
     justify-content: center;
 
 }
+
+/* scroll animado */
+
+.apresentation .scroll-down .label-scroll-down{
+    animation: scroll-animate 3s ease-in-out infinite;
+    transform: rotate(90deg);
+}
+
+@keyframes scroll-animate{
+    0%{
+        
+        transform: translateY(0px);
+        
+    }50%{
+        transform: translateY(30px);
+        opacity: 0%;
+       
+    }100%{
+        transform: translateY(0px);
+        
+    }
+}
+
+/* termino do scroll animado */
 
 @media (max-width: 1250px) {
     .apresentation{
@@ -419,6 +450,34 @@ nav{
 
     .selected-projects{
         transform: translateX(-14%);
+    }
+
+    .work-together{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateY(-7%);
+    }
+
+    .work-together .container-contact{
+        margin-left: 114px;
+    }
+
+    .container-form{
+        width: 660px;
+    }
+
+    .container-contact .container-form input{
+        width: 300px;
+    }
+
+    .container-contact .container-form input:nth-child(4){
+        width: 300px;
+        margin-left: -20px;
+    }
+
+    .container-contact .container-form button{
+        width: 310px;
     }
 
 }
@@ -598,6 +657,11 @@ main .selected-projects{
     .projects-logo{
         transform: translateY(-323%);
     }
+
+    .work-together .container-contact{
+        margin-left: 131px;
+        
+    }
 }
 
 @media(max-width: 1137px){
@@ -612,6 +676,16 @@ main .selected-projects{
         transition: 300ms all;
         background-size: cover;
         background-position: center;
+    }
+
+    .work-together .container-contact{
+        margin-left: 127px;
+        
+    }
+
+    .container-contact .container-form input:nth-child(4){
+        margin-left: 5px;
+        
     }
 }
 
