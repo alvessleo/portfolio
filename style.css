@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display SC', serif;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.bg {
+    height: 100vh;
+    background-size: cover;
+    margin-top: -2.5vh;
+    opacity: 15%;
+}
+
+svg {
+    width: 1em;
+    margin: 2em auto;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.content {
+    color: white;
+    text-align: center;
+
+}
+
+.content h1 {
+    margin-bottom: 0;
+    font-family: 'Playfair Display SC', serif;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.content p {
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    margin-top: -4px;
+}
+
+.content .text-reveal {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 1.5s;
+    transform: translateY(-3em);
+}
+
+.content .text-reveal h2{
+   margin-bottom: -30px;
+}
+
+.label-projects{
+    opacity: 0;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    margin-top: 20px;
+
+}
+
+.envelope-locations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 80%;
+}
+
+
+.label-projects h2{
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
+    transform: translateY(15em);
+}
+
+.locations-container .info {
+    background: white;
+    padding: 3em;
+    position: relative;
+    margin-top: -.5em;
+ }
+
+.info .title {
+    font-size: 2rem;
+    margin-top: -5.5em;
+    margin-bottom: 2.5em;
+    font-weight: bold;
+}
+
+.info .title span {
+    display: block;
+}
+
+.local {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
+    transform: translateY(2em);
+}
+
+img {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
