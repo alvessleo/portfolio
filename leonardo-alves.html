@@ -31,7 +31,7 @@
     </div>
 
     
-    <div class="envelope-locations">
+    <section class="envelope-locations">
         <div class="locations-container">
             <div class="local">
                 <img src="https://assets.codepen.io/2621168/1_1.jpg" alt="Sand and ocean">
@@ -55,18 +55,18 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     
     <script>
         let tl = gsap.timeline({Defaults: { Easing: Expo.EaseOut}});
 
         tl.from('.bg', { scale: 0.6, duration: 2, opacity: 0, ease: Expo.easeOut, delay: 0.2})
         .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, stagger: .3, duration: 1}, "-=2.9")
-        .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', y: -150, duration: .2, delay: .5})
+        .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', y: -100, duration: .2, delay: .5})
         .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: .3, opacity: 1, duration: .3, delay: .5})
-        .to('svg', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: -150 })
+        .to('svg', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: -80, opacity: 0})
         .to('.local', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',y: 0, stagger: .3, opacity: 1, duration: 1}, "-=1.4" )
-    
+        .to('.label-projects', { clipPath: 'polygon(100%, 100% 0)', y: -100})
     </script>
     
 </body>
