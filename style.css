@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Playfair Display SC', serif;
-    background: #111111;
+    background: #060606;
     
 }
 
@@ -181,12 +181,17 @@ img {
     color: #fff;
 }
 
+.about{
+    margin-top: -72vh
+}
+
 .inner-about h1{
     margin-bottom: 0;
     font-family: 'Playfair Display SC', serif;
     font-style: bold;
     font-weight: 400;
     font-size: 60px;
+    opacity: 0;
 }
 
 .inner-about p{
@@ -197,15 +202,17 @@ img {
     font-style: normal;
     font-size: 26px;
     margin-top: -4px;
+    opacity: 0;
 }
 
 .myself{
     display: flex;
-    gap: 30px;
+    gap: 60px;
+    margin-top: -4vh;
 }
 
 .myself .informations{
-    max-width: 40%;
+    max-width: 35%;
     width: 100%;
     color: #fff;
     text-align: left;
@@ -254,6 +261,58 @@ img {
 
 /* RESPONSIVIDADE */
 
+@media (max-width: 1883px){
+    .about{
+       margin-top: -54vh; 
+    }
+}
+
 @media (max-width: 1874px){
-    
+    .about{
+       margin-top: 2vh; 
+    }
+}
+
+@media (max-width: 1249px){
+    .about{
+        margin-top: 66vh;
+    }
+}
+
+@media (max-width: 844px){
+    svg{
+        margin-bottom: -9vh;
+    }
+}
+
+@media (max-width: 777px){
+    .about{
+        margin-top: 74vh;
+    }
+}
+
+@media (max-width: 697px){
+    .content-about .myself{
+        flex-direction: column;
+    }
+
+    .myself .informations{
+        max-width: 60%;
+    }
+
+    .about{
+        margin-top: 84vh;
+    }
+}
+
+@media (max-width: 645px){
+    svg{
+        margin-bottom: -12vh;
+    }
+}
+
+@media (max-width: 518px){
+    .content-inner{
+        margin-top: -12vh;
+    }
 }
