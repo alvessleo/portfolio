@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@300&family=Oswald:wght@500&family=Playfair+Display+SC:wght@400;700&family=Poppins:wght@200&display=swap');
+
 body {
     margin: 0;
     font-family: 'Playfair Display SC', serif;
-    background: rgb(17, 17, 17);
+    background: #111111;
     
 }
 
@@ -166,4 +168,92 @@ img {
     background-color: rgb(29, 27, 60);
     height: 100%;
 
+}
+
+.content-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-about .inner-about{
+    color: #fff;
+}
+
+.inner-about h1{
+    margin-bottom: 0;
+    font-family: 'Playfair Display SC', serif;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.inner-about p{
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    margin-top: -4px;
+}
+
+.myself{
+    display: flex;
+    gap: 30px;
+}
+
+.myself .informations{
+    max-width: 40%;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+}
+
+.myself .informations h1{
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px; 
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+}
+
+.myself .informations{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: #e6880e;
+    background-clip: text;
+    
+}
+
+.myself .informations .description{
+    font-family: 'Poppins' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.myself img{
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.content-about .myself{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1874px){
+    
 }
