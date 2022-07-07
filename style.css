@@ -77,20 +77,19 @@ svg {
 }
 
 .envelope-locations{
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
 .locations-container {
-    position: absolute;
+    
     bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
-    top: 62vh;
+    margin-top: -38vh;
 }
 
 .label-projects h2{
@@ -175,14 +174,11 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 24vh;
 }
 
 .content-about .inner-about{
     color: #fff;
-}
-
-.about{
-    margin-top: -72vh
 }
 
 .inner-about h1{
@@ -329,33 +325,9 @@ img {
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 1883px){
-    .about{
-       margin-top: -54vh; 
-    }
-}
-
-@media (max-width: 1874px){
-    .about{
-       margin-top: 2vh; 
-    }
-}
-
-@media (max-width: 1249px){
-    .about{
-        margin-top: 66vh;
-    }
-}
-
 @media (max-width: 844px){
-    svg{
-        margin-bottom: -9vh;
-    }
-}
-
-@media (max-width: 777px){
-    .about{
-        margin-top: 74vh;
+    .locations-container {
+        margin-top: -34vh;
     }
 }
 
@@ -367,20 +339,36 @@ img {
     .myself .informations{
         max-width: 60%;
     }
-
-    .about{
-        margin-top: 84vh;
-    }
 }
 
 @media (max-width: 645px){
-    svg{
-        margin-bottom: -12vh;
+    .locations-container {
+        margin-top: -32vh;
     }
 }
 
 @media (max-width: 518px){
-    .content-inner{
-        margin-top: -12vh;
+    .locations-container {
+        margin-top: -27vh;
+    }
+}
+
+@media (max-width: 496px){
+    .local{
+        flex: 1 0.5 100%;
+    }
+    .inner-contact h1{
+        font-size: 50px;
+    }
+    .inner-contact p{
+        font-size: 22px;
+    }
+
+    .content h1{
+        font-size: 50px;
+    }
+
+    .label-projects{
+        font-size: 21px;
     }
 }
