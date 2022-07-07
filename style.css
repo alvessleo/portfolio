@@ -222,7 +222,7 @@ img {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px; 
+    font-size: 45px; 
     text-transform: uppercase;
     letter-spacing: 0.025em;
     color: #FFFFFF;
@@ -247,7 +247,7 @@ img {
     color: #FFFFFF;
 }
 
-.myself img{
+.leonardo-instagram{
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
@@ -257,6 +257,74 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact{
+    margin-top: 30vh;
+}
+
+.content-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-contact .inner-contact{
+    color: #fff;
+}
+
+.inner-contact h1{
+    margin-bottom: 0;
+    font-family: 'Playfair Display SC', serif;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 60px;
+    opacity: 0;
+}
+
+.inner-contact p{
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    margin-top: -4px;
+    opacity: 0;
+}
+
+.icon-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: -27px;
+}
+
+.links{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: -90px;
+}
+
+.socials{
+    border-radius: none;
+    width: 40px;
+    height: 40px;
+}
+
+.plane-icon{
+    border-radius: none;
+    width: 30px;
+    height: 30px;
 }
 
 /* RESPONSIVIDADE */
