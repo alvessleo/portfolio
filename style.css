@@ -158,7 +158,7 @@ img {
     width: 100%;
     height: 0%;
     top: 0;
-    opacity: 85%;
+    opacity: 95%;
     z-index: 9999;
     display: flex;
     flex-direction: column;
@@ -169,7 +169,7 @@ img {
 
 .local:hover .sobrepor{
     transition: 1s;
-    background-color: rgb(29, 27, 60);
+    background-color: rgb(35, 35, 35);
     height: 100%;
 
 }
@@ -192,7 +192,13 @@ img {
 .labels a{
     margin-top: 50px;
     border-bottom: solid 1px #ffffff;
+    transition: 0.5s;
 
+}
+
+.labels a:hover{
+    color: #e6880e;
+    border-bottom: solid 1px #e6880e;
 }
 
 .labels{
