@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
@@ -132,12 +133,16 @@
         </div>
     </section>
 
+    <button class="scroll-to-top"><i class="fa fa-arrow-up"></i></button>
+
+
+    <script src="js/scroll.js"></script>
     <script>
         let tl = gsap.timeline({Defaults: { Easing: Expo.EaseOut}});
 
         let tl2 = gsap.timeline({scrollTrigger: {trigger: '.about', start: "center bottom"}});
 
-        let teste = gsap.timeline({scrollTrigger: {trigger: '.contact', start: "center bottom"}});
+        let tl3 = gsap.timeline({scrollTrigger: {trigger: '.contact', start: "center bottom"}});
 
         tl.from('.bg', { scale: 0.6, duration: 2, opacity: 0, ease: Expo.easeOut, delay: 0.2})
         .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, stagger: .3, duration: 1}, "-=2.9")
@@ -146,13 +151,13 @@
         .to('svg', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: -80, opacity: 0})
         .to('.local', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',y: 0, stagger: .3, opacity: 1, duration: 1}, "-=1.4" )
         
-        teste.from('.contact', { y: -150, opacity: 0, duration: 2})
+        tl3.from('.contact', { y: -150, opacity: 0, duration: 1})
 
-        tl2.from('.about', { y: -150, opacity: 0, duration: 2})
-            .from(".leonardo-instagram", {x: -200, opacity: 0, duration: 1.5}, '-=2')
+        tl2.from('.about', { y: -150, opacity: 0, duration: 1})
+            .from(".leonardo-instagram", {x: -200, opacity: 0, duration: 1}, '-=1')
          
         
     </script>
-    
+
 </body>
 </html>
