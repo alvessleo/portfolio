@@ -3,83 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio | Leonardo Alves</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>  
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+    <img class="bg" src="img/background-black.jpg">
+
+    <section class="container">
+        <div class="content">
+            <div class="content-inner">
+                <h1 class="text-reveal">Leonardo Fernandes Alves</h1>
+                <p class="text-reveal">Front End Developer</p>
             </div>
-            <ul class="nav-list">
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Curriculo</a></li>
-            </ul>
-            
-        </nav>
-    </header>
-    <main>
-        <section class="apresentation" data-animation="top">
-            <div class="envelope-container">
-                <div class="line"></div>
-                <label class="label-welcome">Olá, me chamo</label>
-                <label class="label-name">Leonardo Alves</label>
-                <label class="label-subtitle">Engenheiro de Software, Front End developer and UI designer.</label>
-                <button>Entre em contato</button>
-            </div>
-            <img class="alves-logo scroll" data-rate="0.2" data-direction="vertical" src="img/portifolio-alves.png">
-            <div class="scroll-down">
-                <div class="line-scroll-down"></div>
-                <label id="scroll" class="label-scroll-down">Scroll down</label>
-            </div>
-        </section>
+
+            <svg viewBox="0 0 24 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.9393 121.061C11.5251 121.646 12.4749 121.646 13.0607 121.061L22.6066 111.515C23.1924 110.929 23.1924 109.979 22.6066 109.393C22.0208 108.808 21.0711 108.808 20.4853 109.393L12 117.879L3.51471 109.393C2.92893 108.808 1.97918 108.808 1.39339 109.393C0.807607 109.979 0.807607 110.929 1.39339 111.515L10.9393 121.061ZM10.5 -6.55671e-08L10.5 120L13.5 120L13.5 6.55671e-08L10.5 -6.55671e-08Z" fill="white"/>
+            </svg>
+
+            <h2 class="text-reveal label-projects">Projetos selecionados</h2>
+        </div>
         
-        <section class="selected-projects" data-animation="top">
-            <div class="container-projects">
-                <div class="alinhar">
-                    <div class="line-section2"></div>
-                    <label class="label-selected-projects">Projetos selecionados</label>
+    </section>
+
+    
+    <section class="envelope-locations">
+        <div class="locations-container">
+            
+            <div class="local">
+                <div class="sobrepor">
+                    <div class="labels">
+                        <p>2021</p>
+                        <h1>Omnia Scire</h1>
+                        <div class="tag">Front End</div>
+                        <label>Aplicação web feita em 2021 em um projeto da minha faculdade (2 Periodo). Plataforma de ensino, ofertando cursos online.</label>
+                        <a>Visualizar site</a>
+                    </div>
+                    
                 </div>
-                <label class="label-web-aplication">Aplicações web</label>
-                <div class="container-cards">
-                
-                </div>
-                
+                <img src="img/card-omnia-scire.jpg" alt="Sand and ocean">
+                <!--<div class="info">
+                    <p class="year">2021</p>
+                    <p class="title">Omnia Scire</p>
+                    <p>Aplicação web feita em 2021 em um projeto da minha faculdade (2 Periodo). Plataforma de ensino, ofertando cursos online. <br>Apenas Front-End</p>
+                </div>-->
             </div>
-            <img class="projects-logo" src="img/projects-logo.png">
-        </section>
-        <secition class="work-together" data-animation="top">
-            <div class="container-contact">
-                <div class="alinhar-contact">
-                    <div class="line-section3"></div>
-                    <label class="label-need-designer">Precisando de um designer?</label>
+            
+            <div class="local">
+                <div class="sobrepor">
+                    <div class="labels">
+                        <p>2022</p>
+                        <h1>Hemobank</h1>
+                        <div class="tag">Front End & Back End</div>
+                        <label>Projeto realizado no Terceiro periodo da Engenharia de software. Site para doação de sangue, que realiza o intermédio entre o doador e o receptor do sangue.</label>
+                        <a>Visualizar site</a>
+                    </div>
                 </div>
-                <label class="label-work-together">Vamos trabalhar juntos!</label>
-                <div class="container-form">
-                    <input type="text" placeholder="NOME">
-                    <input type="text" placeholder="EMAIL">
-                    <input type="text" placeholder="ASSUNTO">
-                    <input class="message" type="text" placeholder="MENSAGEM">
-                    <button type="submit" id="sendEmail" name="sendEmail">Enviar</button>
+                <img src="img/card-hemobank.jpg" alt="Sand and ocean">
+                <!--<div class="info">
+                    <p class="year">2022</p>
+                    <p class="title">Hemobank</p>
+                    <p>Projeto realizado no Terceiro periodo da Engenharia de software. Site para doação de sangue, que realiza o intermédio entre o doador e o receptor do sangue.<br>Front-End e Back-End</p>
+                </div>-->
+            </div>
+            <div class="local">
+                <div class="sobrepor">
+                    <div class="labels">
+                        <p>2021</p>
+                        <h1>Source Supplements</h1>
+                        <div class="tag">Front End</div>
+                        <label>Projeto em andamento. A ideia é contruir uma aplicação web voltada a venda de suplementos naturais. Esse é um projeto pessoal que pretendo levar a frente.</label>
+                        <a>Visualizar site</a>
+                    </div>
+                </div>
+                <img src="img/card-source-supplements.jpg" alt="Sand and ocean">
+                <!--<div class="info">
+                    <p class="year">2022</p>
+                    <p class="title">Source Supplements</p>
+                    <p>Projeto em andamento. A ideia é contruir uma aplicação web voltada a venda de suplementos naturais. Esse é um projeto pessoal que pretendo levar a frente.</p>
+                </div>-->
+            </div>
+
+            
+        </div>
+        
+    </section>
+        
+    <section class="about">
+        <div class="content-about">
+            <div class="inner-about">
+                <h1 class="">Sobre mim</h1>
+                <p class="">Quem é leonardo</p>
+            </div>
+            <div class="myself">
+                <img class="leonardo-instagram" src="img/image-profile.png">
+                <div class="informations">
+                    <h1>Leonardo Fernandes Alves</h1>
+                    <p class="sub">Front End Developer</p>
+                    <p class="description">Atualmente sou estudante de Engenharia de Software. Apaixonado por design. Sempre procurando formas de melhorar a experiencia do usuário e trazer uma interface clean e minimalista.</p>
                 </div>
             </div>
-            <img class="contact-logo" src="img/contact.png" alt="contatoImg">
-        </secition>
-        <footer class="footer">
-            <div class="logo">
-                <img src="img/portifolio-alves.png" alt="footer-logo">
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="content-contact">
+            <div class="inner-contact">
+                <h1 class="">Contato</h1>
+                <p class="">Precisando de um designer?</p>
             </div>
-            <div class="simple-footer">Leonardo Fernandes Alves © 2022</div>
-        </footer>
-    </main>
-    <script src="js/mobile-navbar.js"></script>
-    <script src="js/cards.js"></script>
-    <script src="js/animations.js"></script>
+            <div class="links">
+                <p>LINKS</p>
+                <div class="icon-contact">
+                    <a href="https://www.linkedin.com/in/leonardo-fernandes-alves-1391b2213/"><img class="socials" src="img/linkedin.png"></a>
+                    <a href="https://github.com/alvessleo"><img class="socials" src="img/github.png"></a>
+                </div>
+                <p>Envie um email em:</p>
+                <div class="email-icon">
+                    <img class="plane-icon" src="img/telegram-plane.png">
+                    <p>alvesleo2002@gmail.com</p>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let tl = gsap.timeline({Defaults: { Easing: Expo.EaseOut}});
+
+        let tl2 = gsap.timeline({scrollTrigger: {trigger: '.about', start: "center bottom"}});
+
+        let teste = gsap.timeline({scrollTrigger: {trigger: '.contact', start: "center bottom"}});
+
+        tl.from('.bg', { scale: 0.6, duration: 2, opacity: 0, ease: Expo.easeOut, delay: 0.2})
+        .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, stagger: .3, duration: 1}, "-=2.9")
+        .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', y: -100, duration: .2, opacity:1, delay: .5})
+        .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: .3, opacity: 1, duration: .3, delay: .5})
+        .to('svg', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: -80, opacity: 0})
+        .to('.local', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',y: 0, stagger: .3, opacity: 1, duration: 1}, "-=1.4" )
+        
+        teste.from('.contact', { y: -150, opacity: 0, duration: 2})
+
+        tl2.from('.about', { y: -150, opacity: 0, duration: 2})
+            .from(".leonardo-instagram", {x: -200, opacity: 0, duration: 1.5}, '-=2')
+         
+        
+    </script>
+    
 </body>
 </html>
