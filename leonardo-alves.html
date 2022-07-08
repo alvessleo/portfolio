@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <img class="bg" src="img/background-black.jpg">
@@ -96,8 +97,8 @@
     <section class="about">
         <div class="content-about">
             <div class="inner-about">
-                <h1 class="text-reveal">Sobre mim</h1>
-                <p class="text-reveal">Quem é leonardo</p>
+                <h1 class="">Sobre mim</h1>
+                <p class="">Quem é leonardo</p>
             </div>
             <div class="myself">
                 <img class="leonardo-instagram" src="img/image-profile.png">
@@ -113,8 +114,8 @@
     <section class="contact">
         <div class="content-contact">
             <div class="inner-contact">
-                <h1 class="text-reveal">Contato</h1>
-                <p class="text-reveal">Precisando de um designer?</p>
+                <h1 class="">Contato</h1>
+                <p class="">Precisando de um designer?</p>
             </div>
             <div class="links">
                 <p>LINKS</p>
@@ -134,13 +135,23 @@
     <script>
         let tl = gsap.timeline({Defaults: { Easing: Expo.EaseOut}});
 
+        let tl2 = gsap.timeline({scrollTrigger: {trigger: '.about', start: "center bottom"}});
+
+        let teste = gsap.timeline({scrollTrigger: {trigger: '.contact', start: "center bottom"}});
+
         tl.from('.bg', { scale: 0.6, duration: 2, opacity: 0, ease: Expo.easeOut, delay: 0.2})
         .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, stagger: .3, duration: 1}, "-=2.9")
         .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', y: -100, duration: .2, opacity:1, delay: .5})
         .to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: .3, opacity: 1, duration: .3, delay: .5})
         .to('svg', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: -80, opacity: 0})
         .to('.local', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',y: 0, stagger: .3, opacity: 1, duration: 1}, "-=1.4" )
-        .to('.label-projects', { clipPath: 'polygon(100%, 100% 0)', y: -100})
+        
+        teste.from('.contact', { y: -150, opacity: 0, duration: 2})
+
+        tl2.from('.about', { y: -150, opacity: 0, duration: 2})
+            .from(".leonardo-instagram", {x: -200, opacity: 0, duration: 1.5}, '-=2')
+         
+        
     </script>
     
 </body>
