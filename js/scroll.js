@@ -4,7 +4,7 @@ const scrollBtn = document.querySelector(".scroll-to-top");
         if (document.documentElement.scrollTop <= 150) {
             scrollBtn.style.display = "none";
         } else {
-            scrollBtn.style.display = "block";
+            scrollBtn.style.display = "flex";
         }
         };
         refreshButtonVisibility();
