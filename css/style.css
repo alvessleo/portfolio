@@ -90,7 +90,7 @@ svg {
     display: inline;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 300vh;
 }
 
 .locations-container {
@@ -100,7 +100,7 @@ svg {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: -38vh;
-    height: 100vh;
+    height: 100%;
 }
 
 .label-projects h2{
@@ -439,7 +439,7 @@ svg {
     }
 }
 
-@media (max-width: 1499px) {
+/*@media (max-width: 1499px) {
     .content-about{
         margin-top: 65vh;
     }
@@ -449,7 +449,7 @@ svg {
     .content-about{
         margin-top: 147vh;
     }
-}
+}*/
 
 @media (max-width: 844px){
     .locations-container {
